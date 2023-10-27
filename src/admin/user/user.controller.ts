@@ -7,6 +7,6 @@ export class UserController {
 
     @Post('find-one')
     findOne(@Body() body: any) {
-        return this.userService.findOne(body.username)
+        return this.userService.findOne(body.username, body.phone)
     }
 }
